@@ -11,6 +11,10 @@
   --accent-color: #2196f3;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--primary-text-color);
   background-color: var(--bgc-color);
@@ -48,6 +52,17 @@ h3,
 p,
 ul {
   margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 /* ------------------ PAGE HEADER------------------------------ */
@@ -123,6 +138,7 @@ ul {
 .hero {
   background-color: var(--hero-bgc);
   padding-top: 200px;
+  padding-bottom: 106px;
   text-align: center;
 }
 
@@ -153,7 +169,6 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   min-width: 200px;
-  margin-bottom: 106px;
 }
 
 /* Названия секций */
@@ -168,17 +183,6 @@ ul {
 }
 
 /* ------------------- FEATURES SECTION ---------------*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
 .features-list {
   display: flex;
 }
@@ -249,12 +253,12 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .team-card {
   width: 270px;
   background-color: var(--bgc-color);
+  padding-bottom: 30px;
 }
 
 .team-card:not(:last-child) {
