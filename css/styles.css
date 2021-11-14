@@ -138,7 +138,7 @@ ul {
 .hero {
   background-color: var(--hero-bgc);
   padding-top: 200px;
-  padding-bottom: 106px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -188,7 +188,7 @@ ul {
 }
 
 .features-item {
-  width: calc((100% - 60) / 3);
+  width: calc((100% - 90px) / 3);
 }
 
 .features-item:not(:last-child) {
@@ -257,7 +257,6 @@ ul {
 .team-card {
   width: 270px;
   background-color: var(--bgc-color);
-  padding-bottom: 30px;
 }
 
 .team-card:not(:last-child) {
@@ -270,22 +269,23 @@ ul {
 
 .team-img {
   display: block;
-  margin-bottom: 30px;
+}
+
+.team-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* ---------------- FOOTER --------------------------- */
 
 .footer {
-  background-color: var(--bgc-footer);
+  background-color: var(--bgc-footer);  
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
   color: #ffffff;
-}
-
-.footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-logo {
